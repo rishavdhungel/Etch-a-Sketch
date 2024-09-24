@@ -1,8 +1,10 @@
 main {
     display: flex;
-    height: 100vh;
-    background-color: rgba(54, 49, 48, 0.473);
-    justify-content:flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    height: fit-content;
+    padding: 20px;
 }
 .titleHead{
     color: rgb(255, 255, 255);
@@ -15,57 +17,63 @@ main {
 }
 .toolbar{   
     margin: 100px 50px;
-    height: 500px;
-    width: 200px;
+    height: fit-content;
     background-color: white;
     display: flex;
-    flex-wrap:wrap ;
+    flex-wrap:wrap;
+    align-items: center;
+    padding: 2em;
 }
 
 .colorPalette{
-    padding: 22px;
     border: 1px solid black;
-    width: 50px;
-    height: 50px;
+    width: 3em;
+    height:3em;
     margin: 2px;
 }
 
-.blue{
+.gridCell{
+    width: 2.1rem;
+    height: 2.1rem;
+    border: 1px solid gray;
+}
+
+#blue{
     background-color: blue;
 }
 
-.green {
+#green {
     background-color: green;
 }
 
-.yellow{
+#yellow{
     background-color: yellow;
 }
 
-.orange{
+#orange{
     background-color: orange;
 }
 
-.red{
+#red{
     background-color: red;
 }
 
-.cyan{
+#cyan{
     background-color: cyan;
 }
 
-.purple {
+#purple {
     background-color: purple;
 }
 
-.violet{
+#violet{
     background-color: violet;
 }
 
-.black{
+#black{
     background-color: black;
 }
-.white{
+#white{
     background-color: white;
 }
 #canvasColor{
@@ -74,7 +82,12 @@ main {
 }
 
 .canvas{
-    margin: 100px 50px;
-    width: 600px;
+    padding: 1.2em;
     height: 600px;
+    width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid black;
+
 }
